@@ -1,0 +1,42 @@
+.titleFixed {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: aquamarine;
+
+}
+
+.imgFixed {
+
+
+    background-color: rgb(42, 134, 165);
+    background-image: url(../assets/img/travel.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin:25px;
+    font-size: 15px;
+}
+
+.mainContainer {
+    
+    background-color: aqua;
+
+    &:hover {
+    
+        background-color: rgb(194, 233, 233);
+        transition: background-color 1s;     
+    } 
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}

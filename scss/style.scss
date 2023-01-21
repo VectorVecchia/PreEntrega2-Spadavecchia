@@ -1,0 +1,141 @@
+@import "./header";
+@import "./fixed";
+@import "./aside";
+@import "./footer";
+@import "./destinos";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+    border-radius: 10px;
+
+
+}
+
+/* --TÍTULOS-- --PÁRRAFOS */
+
+h1,
+h2 {
+    margin-bottom: 20px;
+
+}
+
+
+
+
+/* COLECCION */
+
+.galeriaContainer img {
+}
+div img {
+    margin: 5px;
+}
+/* Acera De */
+
+.acercaContainer {
+    background-color: aquamarine;
+    width: 80%;
+    margin: auto;
+}
+
+/* CONTACTO */
+
+.formContainer {
+    
+    background-color: aquamarine;
+    width: 230px;
+    margin: 200px 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.controls {
+    margin: 5px;
+    padding: 3px;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width:320px){
+    li {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:474px){
+    li {
+       font-size: 8px;
+    }
+
+    
+
+}
+
+@media screen and (max-width:550px){
+    li {
+       font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px){
+    li {
+        font-size: 12px;
+    }
+.formContainer {
+    margin: auto;
+    margin-top: 200px;
+}
+
+.columna1 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.columna2 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+iframe:hover {
+    width: 90%;
+}
+ .colecc1 img{
+     width: 90vw;
+     margin: 10px;
+ }
+ .colecc2 img{
+    width: 90vw;
+    margin: 10px;
+ }
+ .imgFixed {
+width: 95vw;
+margin: 10px;
+background-size:cover ;
+
+ }
+
+ 
+}
+
+

@@ -1,0 +1,18 @@
+.asideContainer {
+    /* text-align: center;
+    width: 40%;
+    float: right;
+    margin-right: 50px; */
+    background-color: aqua;
+
+    &:hover {
+        /* text-align: center;
+        width: 40%;
+        float: right;
+        margin-right: 50px; */
+        background-color: rgb(194, 233, 233);
+        transition: background-color 1s;
+    
+    }
+
+}
