@@ -1,31 +1,9 @@
-header {
-
-    height: 100px;
-    .logo {
-        margin: 10px;
-        padding: 5px;
-        font-size: 20px;
-    }
-    ul {
-        float: right;
-        height: 30px;
-        margin: 10px;
-
-        li {
-            display: inline;
-            cursor: pointer;
-            margin: 10px;
-            padding: 5px;
-
-            &:hover {
-                 
-                    color: rgb(21, 115, 57);
-                    letter-spacing: 2px;
-                    border-bottom: 1px solid black;
-                    transition: all 1s;
-                }
-            }
-        }
-    
-    }
-
+ .navbar-brand {
+   font-style: italic;
+   font-weight: 600;
+   
+ }
+ 
+ ul{
+    margin-left: 750px;
+ }

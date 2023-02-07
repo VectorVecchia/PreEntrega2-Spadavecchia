@@ -1,39 +1,27 @@
 @charset "UTF-8";
-header {
-  height: 100px; }
-  header .logo {
-    margin: 10px;
-    padding: 5px;
-    font-size: 20px; }
-  header ul {
-    float: right;
-    height: 30px;
-    margin: 10px; }
-    header ul li {
-      display: inline;
-      cursor: pointer;
-      margin: 10px;
-      padding: 5px; }
-      header ul li:hover {
-        color: #157339;
-        letter-spacing: 2px;
-        border-bottom: 1px solid black;
-        transition: all 1s; }
+.navbar-brand {
+  font-style: italic;
+  font-weight: 600; }
 
-.titleFixed {
-  color: white;
-  text-align: center;
-  letter-spacing: 2px;
-  background-color: aquamarine; }
+ul {
+  margin-left: 750px; }
 
 .imgFixed {
-  background-color: #2a86a5;
-  background-image: url(../assets/img/travel.jpg);
-  height: 100vh;
-  width: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  object-fit: contain;
+  height: 100vh; }
+  .imgFixed video {
+    width: 100%;
+    position: fixed;
+    z-index: -1; }
+
+.bannerTitle {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -400px; }
 
 .containerGrid {
   display: grid;
@@ -42,107 +30,199 @@ header {
   margin: 25px;
   font-size: 15px; }
 
-.mainContainer {
-  background-color: aqua; }
-  .mainContainer:hover {
-    background-color: #c2e9e9;
-    transition: background-color 1s; }
+.carousel-control-prev-icon {
+  background-color: black; }
 
-p {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.asideContainer {
-  /* text-align: center;
-    width: 40%;
-    float: right;
-    margin-right: 50px; */
-  background-color: aqua; }
-  .asideContainer:hover {
-    /* text-align: center;
-        width: 40%;
-        float: right;
-        margin-right: 50px; */
-    background-color: #c2e9e9;
-    transition: background-color 1s; }
+.carousel-control-next-icon {
+  background-color: black; }
 
 footer {
   height: 200px;
-  background-color: aquamarine;
-  margin-top: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  z-index: 1000; }
   footer iframe {
     float: left;
     padding: 10px;
     margin: 30px; }
     footer iframe:hover {
-      width: 100%;
+      width: 95%;
       transition: all 1s; }
 
+svg {
+  margin: 10px;
+  display: inline-flex;
+  margin-left: 200px;
+  color: blue;
+  cursor: pointer; }
+
+.bi-instagram {
+  color: #ff004c; }
+
+.bi-twitter {
+  color: #0073ff; }
+
 .titleGeneric {
-  background-color: blueviolet;
   text-align: center;
   margin: 30px;
   padding: 5px;
   margin-bottom: 150px; }
 
-.destinoTitle {
-  text-align: center; }
-
-.destinos {
-  background-color: bisque;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .destinos ol {
-    margin: 10px;
-    padding: 20px; }
-    .destinos ol li {
-      padding: 15px;
-      border: solid 1px black;
-      width: 200px;
-      background-color: aqua; }
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.362);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-a {
-  text-decoration: none;
-  color: black;
-  margin: 3px;
-  border-radius: 10px; }
+.btn-primary {
+  background-color: #313240; }
+  .btn-primary:hover {
+    background-color: #436A84; }
 
 /* --TÍTULOS-- --PÁRRAFOS */
-h1,
+.bannerTitle {
+  font-family: 'Bangers', cursive;
+  color: whitesmoke;
+  letter-spacing: 20px; }
+
 h2 {
-  margin-bottom: 20px; }
+  text-align: center;
+  margin: 40px;
+  padding: 10px;
+  color: #ccc;
+  font-weight: 700; }
 
-/* COLECCION */
-div img {
-  margin: 5px; }
-
-/* Acera De */
-.acercaContainer {
-  background-color: aquamarine;
-  width: 80%;
-  margin: auto; }
+span {
+  color: beige; }
 
 /* CONTACTO */
 .formContainer {
-  background-color: aquamarine;
-  width: 230px;
-  margin: 200px 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 250px;
   padding: 20px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: auto; }
+  .formContainer input {
+    padding: 3px;
+    margin: 3px; }
+  .formContainer textarea {
+    width: 100%;
+    margin: 2px; }
 
-.controls {
-  margin: 5px;
-  padding: 3px; }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 10px;
+  height: 1200px;
+  grid-auto-flow: row;
+  margin: auto;
+  padding: 10px;
+  grid-template-areas: "photo-1 photo-1 photo-1 photo-1 photo-8 photo-8 photo-10" "photo-1 photo-1 photo-1 photo-1 photo-8 photo-8 photo-11" "photo-2 photo-2 photo-3 photo-4 photo-8 photo-8 photo-12" "photo-2 photo-2 photo-5 photo-6 photo-9 photo-9 photo-9" "photo-2 photo-2 photo-7 photo-7 photo-7 photo-7 photo-7"; }
+  .container .photo-1 {
+    grid-area: photo-1;
+    background-image: url(../assets/img/grid/1.jpg);
+    background-size: cover; }
+  .container .photo-2 {
+    grid-area: photo-2;
+    background-image: url(../assets/img/grid/2.jpg);
+    background-size: cover; }
+  .container .photo-3 {
+    grid-area: photo-3;
+    background-image: url(../assets/img/grid/3.jpg);
+    background-size: cover; }
+  .container .photo-4 {
+    grid-area: photo-4;
+    background-image: url(../assets/img/grid/4.jpg);
+    background-size: cover; }
+  .container .photo-5 {
+    grid-area: photo-5;
+    background-image: url(../assets/img/grid/5.jfif);
+    background-size: cover; }
+  .container .photo-6 {
+    grid-area: photo-6;
+    background-image: url(../assets/img/grid/6.jpg);
+    background-size: cover; }
+  .container .photo-7 {
+    grid-area: photo-7;
+    background-image: url(../assets/img/grid/7.jpg);
+    background-size: cover; }
+  .container .photo-8 {
+    grid-area: photo-8;
+    background-image: url(../assets/img/grid/8.jpg_large);
+    background-size: cover; }
+  .container .photo-9 {
+    grid-area: photo-9;
+    background-image: url(../assets/img/grid/9.jpg);
+    background-size: cover; }
+  .container .photo-10 {
+    grid-area: photo-10;
+    background-image: url(../assets/img/grid/10.jpg);
+    background-size: cover; }
+  .container .photo-11 {
+    grid-area: photo-11;
+    background-image: url(../assets/img/grid/11.jpg);
+    background-size: cover; }
+  .container .photo-12 {
+    grid-area: photo-12;
+    background-image: url(../assets/img/grid/12.jpg);
+    background-size: cover; }
+  .container .photo:hover {
+    border-radius: 10%;
+    transition: all 4s; }
+
+.card {
+  display: inline-flex;
+  margin-left: 100px;
+  margin-top: 30px; }
+
+.carousel-caption h5 {
+  color: #ccc;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel-caption p {
+  color: #ccc;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel-item {
+  height: 400px; }
+
+.titleGeneric {
+  margin-top: 100px; }
+
+.text-end {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.acercaContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  color: #ccc; }
+
+.mainContainer {
+  margin-top: 45px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
+.figure {
+  width: 200px;
+  height: 200px;
+  margin-left: 60px;
+  padding: 10px;
+  border-radius: 100%; }
 
 /* MEDIA QUERIES  */
 @media screen and (max-width: 320px) {
@@ -158,6 +238,15 @@ div img {
     font-size: 12px; } }
 
 @media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas: "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1" "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1" "photo-2 photo-2 photo-3 photo-3 photo-4 photo-4 photo-4" "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8" "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8"; }
+  h1, h5 {
+    font-size: 15px;
+    text-align: center; }
+  .card {
+    width: 40px; }
+  ul {
+    margin-left: 0; }
   li {
     font-size: 12px; }
   .formContainer {
@@ -175,13 +264,25 @@ div img {
     justify-content: center; }
   iframe:hover {
     width: 90%; }
-  .colecc1 img {
-    width: 90vw;
-    margin: 10px; }
-  .colecc2 img {
-    width: 90vw;
-    margin: 10px; }
   .imgFixed {
     width: 95vw;
     margin: 10px;
-    background-size: cover; } }
+    background-size: cover; }
+  svg {
+    padding: 2px;
+    margin: 30px; } }
+
+@media screen and (max-width: 990px) {
+  .imgFixed {
+    width: 100%; }
+  ul {
+    margin-right: auto; }
+    ul li {
+      font-size: 20px; } }
+
+@media screen and (max-width: 1170px) {
+  .card {
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5px; } }

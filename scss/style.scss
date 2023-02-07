@@ -1,141 +1,357 @@
 @import "./header";
 @import "./fixed";
-@import "./aside";
 @import "./footer";
 @import "./destinos";
 
 * {
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  
 }
 
 body {
-    overflow-x: hidden;
-    
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.362);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-primary {
+  background-color: #313240;
+
+  &:hover {
+    background-color: #436A84;
+  }
 }
 
 
-a {
-    text-decoration: none;
-    color: black;
-    margin: 3px;
-    border-radius: 10px;
-
-
-}
 
 /* --TÍTULOS-- --PÁRRAFOS */
 
-h1,
+ .bannerTitle {
+  font-family: 'Bangers', cursive;
+  color: whitesmoke;
+  letter-spacing: 20px;
+ }
+
 h2 {
-    margin-bottom: 20px;
-
+  text-align: center;
+  margin: 40px;
+  padding: 10px;
+  color: #ccc;
+  font-weight: 700;
 }
 
-
-
-
-/* COLECCION */
-
-.galeriaContainer img {
+span {
+  color: beige;
 }
-div img {
-    margin: 5px;
-}
-/* Acera De */
 
-.acercaContainer {
-    background-color: aquamarine;
-    width: 80%;
-    margin: auto;
-}
 
 /* CONTACTO */
 
+
+
 .formContainer {
-    
-    background-color: aquamarine;
-    width: 230px;
-    margin: 200px 500px;
-    padding: 20px;
-    border-radius: 10px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+
+  input {
+    padding: 3px;
+    margin: 3px;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 2px;
+  }
 }
 
-.controls {
-    margin: 5px;
-    padding: 3px;
+//  DESTINOS
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 10px;
+  height: 1200px;
+  grid-auto-flow: row;
+  margin: auto;
+  padding: 10px;
+
+  grid-template-areas:
+    "photo-1 photo-1 photo-1 photo-1 photo-8 photo-8 photo-10"
+    "photo-1 photo-1 photo-1 photo-1 photo-8 photo-8 photo-11"
+    "photo-2 photo-2 photo-3 photo-4 photo-8 photo-8 photo-12"
+    "photo-2 photo-2 photo-5 photo-6 photo-9 photo-9 photo-9"
+    "photo-2 photo-2 photo-7 photo-7 photo-7 photo-7 photo-7";
+
+  .photo-1 {
+    grid-area: photo-1;
+    background-image: url(../assets/img/grid/1.jpg);
+    background-size: cover;
+  }
+
+  .photo-2 {
+    grid-area: photo-2;
+    background-image: url(../assets/img/grid/2.jpg);
+    background-size: cover;
+  }
+
+  .photo-3 {
+    grid-area: photo-3;
+    background-image: url(../assets/img/grid/3.jpg);
+    background-size: cover;
+  }
+
+  .photo-4 {
+    grid-area: photo-4;
+    background-image: url(../assets/img/grid/4.jpg);
+    background-size: cover;
+  }
+
+  .photo-5 {
+    grid-area: photo-5;
+    background-image: url(../assets/img/grid/5.jfif);
+    background-size: cover;
+  }
+
+  .photo-6 {
+    grid-area: photo-6;
+    background-image: url(../assets/img/grid/6.jpg);
+    background-size: cover;
+  }
+
+  .photo-7 {
+    grid-area: photo-7;
+    background-image: url(../assets/img/grid/7.jpg);
+    background-size: cover;
+  }
+
+  .photo-8 {
+    grid-area: photo-8;
+    background-image: url(../assets/img/grid/8.jpg_large);
+    background-size: cover;
+  }
+
+  .photo-9 {
+    grid-area: photo-9;
+    background-image: url(../assets/img/grid/9.jpg);
+    background-size: cover;
+  }
+
+  .photo-10 {
+    grid-area: photo-10;
+    background-image: url(../assets/img/grid/10.jpg);
+    background-size: cover;
+  }
+
+  .photo-11 {
+    grid-area: photo-11;
+    background-image: url(../assets/img/grid/11.jpg);
+    background-size: cover;
+  }
+
+  .photo-12 {
+    grid-area: photo-12;
+    background-image: url(../assets/img/grid/12.jpg);
+    background-size: cover;
+  }
+  .photo {
+    &:hover {
+      
+      border-radius: 10%;
+      transition: all 4s ;
+    }
+  }
 }
+
+//  CARROUSEL
+
+.card {
+  display: inline-flex;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.carousel-caption {
+  h5 {
+    color: #ccc;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+  }
+
+  p {
+    color: #ccc;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+//  ACERCA DE 
+
+.titleGeneric {
+  margin-top: 100px;
+}
+
+.text-end {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  ;
+}
+
+.acercaContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  color: #ccc;
+}
+
+.mainContainer {
+  margin-top: 45px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.figure {
+  width: 200px;
+  height: 200px;
+  margin-left: 60px;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+//  PROMOCIONES
+
+.card-body {}
 
 /* MEDIA QUERIES  */
 
-@media screen and (max-width:320px){
-    li {
-        font-size: 12px;
-    }
+@media screen and (max-width:320px) {
+  li {
+    font-size: 12px;
+  }
 }
-@media screen and (max-width:474px){
-    li {
-       font-size: 8px;
-    }
 
+@media screen and (max-width:474px) {
+  li {
+    font-size: 8px;
+  }
+
+
+
+}
+
+@media screen and (max-width:550px) {
+  li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+   .container {
+
+    grid-template-areas:
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1"
+    "photo-2 photo-2 photo-3 photo-3 photo-4 photo-4 photo-4"
+    "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8"
+    "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8";
+
+   }
+
+   h1 ,h5, {
+      font-size: 15px;
+      text-align:center;
+   }
+   
+    .card {
+      width: 40px;
+    }
+  ul{
+    margin-left: 0;
     
+ }
+  
+  li {
+    font-size: 12px;
+  }
 
-}
-
-@media screen and (max-width:550px){
-    li {
-       font-size: 12px;
-    }
-}
-
-@media screen and (max-width:768px){
-    li {
-        font-size: 12px;
-    }
-.formContainer {
+  .formContainer {
     margin: auto;
     margin-top: 200px;
-}
+  }
 
-.columna1 {
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.columna2 {
+  .columna1 {
 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
 
-iframe:hover {
+  }
+
+  .columna2 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  iframe:hover {
     width: 90%;
-}
- .colecc1 img{
-     width: 90vw;
-     margin: 10px;
- }
- .colecc2 img{
-    width: 90vw;
+  }
+
+  .imgFixed {
+    width: 95vw;
     margin: 10px;
- }
- .imgFixed {
-width: 95vw;
-margin: 10px;
-background-size:cover ;
+    background-size: cover;
 
- }
+  }
+  svg {
+     padding: 2px;
+     margin: 30px;
+  }
 
- 
 }
 
+@media screen and (max-width:990px){
+   .imgFixed {
+    width: 100%;
+   }
+  ul{
+    margin-right: auto;
+    li {
+      font-size: 20px;
+    }
+    
+ }
+}
+
+@media screen and (max-width:1170px){
+ 
+  
+  .card {
+     display: grid;
+     margin: auto;
+     padding: 10px;
+     margin-bottom: 5px;
+  }
+}
 
