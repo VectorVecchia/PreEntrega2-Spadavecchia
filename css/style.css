@@ -225,7 +225,27 @@ span {
   border-radius: 100%; }
 
 /* MEDIA QUERIES  */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 376px) {
+  .figure {
+    margin-bottom: 50px; }
+  .containerGrid {
+    grid-template-columns: auto; }
+  .mainContainer {
+    width: 100%; }
+  svg {
+    margin: 0;
+    padding: 0;
+    display: flex; }
+  .imgFixed video {
+    width: 350px;
+    margin: auto;
+    margin-left: 3px; }
+  .card img {
+    width: 200px;
+    margin: auto; }
+  .container {
+    width: 100vw;
+    margin-left: 10px; }
   li {
     font-size: 12px; } }
 
