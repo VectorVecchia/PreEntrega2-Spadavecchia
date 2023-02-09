@@ -225,84 +225,42 @@ span {
   border-radius: 100%; }
 
 /* MEDIA QUERIES  */
-@media screen and (max-width: 376px) {
-  .figure {
-    margin-bottom: 50px; }
-  .containerGrid {
-    grid-template-columns: auto; }
-  .mainContainer {
-    width: 100%; }
-  svg {
-    margin: 0;
-    padding: 0;
-    display: flex; }
-  .imgFixed video {
-    width: 350px;
-    margin: auto;
-    margin-left: 3px; }
-  .card img {
-    width: 200px;
-    margin: auto; }
-  .container {
-    width: 100vw;
-    margin-left: 10px; }
-  li {
-    font-size: 12px; } }
-
-@media screen and (max-width: 474px) {
-  li {
-    font-size: 8px; } }
-
-@media screen and (max-width: 550px) {
-  li {
-    font-size: 12px; } }
-
-@media screen and (max-width: 768px) {
-  .container {
-    grid-template-areas: "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1" "photo-1 photo-1 photo-1 photo-1 photo-1 photo-1 photo-1" "photo-2 photo-2 photo-3 photo-3 photo-4 photo-4 photo-4" "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8" "photo-5 photo-5 photo-5 photo-6 photo-6 photo-8 photo-8"; }
-  h1, h5 {
-    font-size: 15px;
-    text-align: center; }
-  .card {
-    width: 40px; }
+@media screen and (max-width: 992px) {
   ul {
     margin-left: 0; }
-  li {
-    font-size: 12px; }
-  .formContainer {
-    margin: auto;
-    margin-top: 200px; }
-  .columna1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .columna2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  iframe:hover {
-    width: 90%; }
-  .imgFixed {
-    width: 95vw;
-    margin: 10px;
-    background-size: cover; }
-  svg {
-    padding: 2px;
-    margin: 30px; } }
-
-@media screen and (max-width: 990px) {
-  .imgFixed {
-    width: 100%; }
-  ul {
-    margin-right: auto; }
-    ul li {
-      font-size: 20px; } }
-
-@media screen and (max-width: 1170px) {
   .card {
     display: grid;
+    grid-template-columns: 1fr;
     margin: auto;
-    padding: 10px;
-    margin-bottom: 5px; } }
+    width: 100px; } }
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-bottom: 5px; }
+  svg {
+    margin: 15px; } }
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin-bottom: 10px; }
+  .container {
+    grid-template-areas: "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2" "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4"; }
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 18px; } }
+
+@media screen and (max-width: 320px) {
+  .card .card-body {
+    width: 100vw; }
+  .card img {
+    width: 230px; }
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px; }
+  .asideContainer {
+    width: 100%; }
+    .asideContainer .figure {
+      width: 150px;
+      border-radius: 100%; } }
