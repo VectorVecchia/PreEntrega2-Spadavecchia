@@ -235,6 +235,10 @@ span {
     width: 100px; } }
 
 @media screen and (max-width: 768px) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 18px; }
   .card {
     margin-bottom: 5px; }
   svg {
