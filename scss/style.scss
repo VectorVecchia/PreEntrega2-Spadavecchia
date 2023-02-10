@@ -240,7 +240,10 @@ span {
 
 /* MEDIA QUERIES  */
 
+
 @media screen and (max-width:992px){
+ 
+  
   ul {
     margin-left:0;
   }
@@ -252,10 +255,14 @@ span {
   }
 }
 @media screen and (max-width:768px){
+  .imgFixed {
+    height: 80vh;
+  }
   .containerGrid {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 18px;
+    
   }
 
   .card {
@@ -265,12 +272,24 @@ span {
   svg {
     margin:15px;
   }
-  
+ iframe {
+  margin: auto;
+  width: 90vw;
+ }
+ .asideContainer {
+  margin-left: 55px;
+ }
 }
 @media screen and (max-width:600px){
-
+  h2 {
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  .imgFixed {
+    height: 70vh;
+  }
   .card {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .container {
@@ -287,33 +306,16 @@ span {
     grid-template-columns: 1fr;
     font-size: 18px;
   }
-
+  .asideContainer {
+    margin-left:1px;
+    margin: auto;
+  }
 }
 
-@media screen and (max-width:320px){
-  .card {
+iframe {
+  width: 90%vw;
+}
 
-    .card-body {
-      width: 100vw;
-    }
-    
-    img {
-      width: 230px;
-    }
-  }
-  .containerGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 15px;
-  }
-
-  .asideContainer {
-
-    .figure {
-      width: 150px;
-      border-radius: 100%;
-    }
-    width: 100%;
-    
-  }
+svg {
+  margin-right: 105px;
 }

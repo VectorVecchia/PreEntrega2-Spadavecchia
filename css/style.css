@@ -235,6 +235,8 @@ span {
     width: 100px; } }
 
 @media screen and (max-width: 768px) {
+  .imgFixed {
+    height: 80vh; }
   .containerGrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -242,29 +244,33 @@ span {
   .card {
     margin-bottom: 5px; }
   svg {
-    margin: 15px; } }
+    margin: 15px; }
+  iframe {
+    margin: auto;
+    width: 90vw; }
+  .asideContainer {
+    margin-left: 55px; } }
 
 @media screen and (max-width: 600px) {
+  h2 {
+    margin-bottom: 40px;
+    padding: 10px; }
+  .imgFixed {
+    height: 70vh; }
   .card {
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .container {
     grid-template-areas: "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2" "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4" "photo-3 photo-3 photo-3 photo-4 photo-4 photo-4 photo-4"; }
   .containerGrid {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 18px; } }
-
-@media screen and (max-width: 320px) {
-  .card .card-body {
-    width: 100vw; }
-  .card img {
-    width: 230px; }
-  .containerGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 15px; }
+    font-size: 18px; }
   .asideContainer {
-    width: 100%; }
-    .asideContainer .figure {
-      width: 150px;
-      border-radius: 100%; } }
+    margin-left: 1px;
+    margin: auto; } }
+
+iframe {
+  width: 90%vw; }
+
+svg {
+  margin-right: 105px; }
